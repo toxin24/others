@@ -5,13 +5,13 @@ import sys
 #example a.py <path tree> <file output hasil>
 path = sys.argv[1]
 fname =[]
-
+output = str("{}/{}".format(os.getcwd(),sys.argv[2]))
 #get all  tree directories and file name
 for root, d_names, f_names in os.walk(path):
         for f in f_names:
                 fname.append(os.path.join(root,f))
 # read files on list
-f = open (sys.argv[2], 'a')
+f = open (output, 'a')
 for i in fname:
         ini= open(i, 'r').read()
         print ini
