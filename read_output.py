@@ -2,7 +2,7 @@ import os
 import sys
 
 #give the path you want to look
-#example a.py <path tree> <file output hasil>
+#example read_output.py <path tree> <file output hasil>
 path = sys.argv[1]
 output1 = str("{}/{}_files.txt".format(os.getcwd(),sys.argv[2]))
 output2 = str("{}/{}_directories.txt".format(os.getcwd(),sys.argv[2]))
